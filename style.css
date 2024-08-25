@@ -1,0 +1,294 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin: 0.75rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size:1rem;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    height: 100vh;
+    border-radius: 1rem;
+    margin: 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 0.5rem 0.75rem;
+
+}
+
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.75;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    border-radius: 1rem;
+    margin: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    width:220px;
+    height: 8rem;
+    
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.badge{
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+    height: 1.75rem;
+    width: fit-content;
+}
+
+.dark-badge{
+    background-color: black; 
+    color:white;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-right: 2rem;
+    z-index: 10;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards-container{
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap:wrap
+}
+
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 0.75rem;
+    margin-top: 1rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+    
+}
+
+.card-title{
+    font-weight: 500;
+}
+
+.card-info{
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width:90%;
+    height:50%;
+    border-top: white solid 1px;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-current{
+    width: 25%;
+    display:flex;
+    align-items: center;
+}
+
+.music-controls{
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.music-adjusts{
+    width: 25%;
+}
+
+.song-details p{
+    margin: 0px;
+    padding: 1px;
+}
+
+.song-details {
+    font-size: 0.75rem;
+}
+
+.song-name{
+    font-weight: 700;
+}
+
+.artist-name{
+    opacity: 0.9;
+}
+
+.music-current img{
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+}
+
+.music-current i{
+    margin-left: 1rem;
+}
+
+.controls-icon{
+    height: 0.75rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.controls-icon:hover{
+    opacity: 1;
+}
+
+.controls-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.controls-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar{
+    width: 60%;
+}
+
+.music-adjusts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-adjusts i{
+    opacity: 0.7;
+    margin-right: 0.75rem;
+}
+
+.music-adjusts i:hover{
+    opacity: 1;
+}
+
